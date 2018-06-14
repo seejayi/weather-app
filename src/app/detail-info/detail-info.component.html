@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>Forecast 5 days</p>
+      <nav class="nav-wr">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a (click)="redrawChart('temp')" class="nav-item nav-link active" id="temp" data-toggle="tab"  role="tab" aria-controls="temp" aria-selected="true">Temperature</a>
+          <a (click)="redrawChart('wind')" class="nav-item nav-link" id="wind" data-toggle="tab"  role="tab" aria-controls="wind" aria-selected="false">Wind</a>
+          <a (click)="redrawChart('pressure')" class="nav-item nav-link" id="pressure" data-toggle="tab"  role="tab" aria-controls="pressure" aria-selected="false">Pressure</a>
+          <a (click)="redrawChart('humidity')" class="nav-item nav-link" id="humidity" data-toggle="tab"  role="tab" aria-controls="humidity" aria-selected="false">Humidity</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div #chartTarget>
+        chart target
+      </div>
+    </div>
+  </div>
+</div>

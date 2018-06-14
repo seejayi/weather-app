@@ -1,0 +1,23 @@
+.current-weather {
+    text-align: center;
+}
+.city {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.temp {
+    margin-bottom: 0;
+}
+.date {
+    padding-top: 15px;
+    font-weight: 500;
+}
+.info-panel ul{
+    text-align: center;
+    list-style: none;
+    padding: 4px 0;
+}
+.info-panel ul li {
+    display: inline-block;
+    margin-right: 20px;
+}

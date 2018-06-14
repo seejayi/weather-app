@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="date">
+        {{convertDate(weather?.list[0].dt_txt) | date: 'EEEE, d LLLL'}}
+      </div>
+      <div class="current-weather">
+        <h3 class="city">{{weather?.city.name + ', ' + weather?.city.country}}</h3>
+        <h2 class="temp"><span>{{celsiusFormat(weather?.list[0].main.temp)}}<sup>o</sup></span>C</h2>
+        <p class="shine"><img class="icon" src="{{'http://openweathermap.org/img/w/' + weather?.list[0].weather[0].icon + '.png'}}">{{weather?.list[0].weather[0].main}}</p>
+      </div>
+      <div class="info-panel bg-light">
+        <ul>
+          <li><strong>Pressure: </strong> <span>{{weather?.list[0].main.pressure}}</span></li>
+          <li><strong>Humidity: </strong> <span>{{weather?.list[0].main.humidity}}</span></li>
+          <li><strong>Wind Speed: </strong> <span>{{weather?.list[0].wind.speed}} m/s</span></li>
+          <li><strong>Clouds: </strong> <span>{{weather?.list[0].clouds.all}}%</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
