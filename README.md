@@ -1,6 +1,6 @@
 # weather-app
-Angular, Bootstrap
-Getting started:
-1)clone or download repo
-2)npm install
-3)npm start
+Angular, Bootstrap<br>
+Getting started:<br>
+1)clone or download repo<br>
+2)npm install<br>
+3)npm start<br>
